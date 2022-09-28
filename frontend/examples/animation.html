@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS - Background</title>
+        <style>
+            body{
+                background-image: url("mybg.jpeg");
+                background-repeat: repeat-y repeat-x;
+                background-attachment: fixed;
+                background-color: greenyellow;
+                color: white;
+                /* background: url("mybg.jpeg") greenyellow repeat scroll; */
+                /* color: white; */
+            }
+            .tobebordered1{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+                animation-name: example;
+                animation-duration: 4s;
+            }
+            @keyframes example {
+                0%{background-color: red; left: 0px; top: 0px}
+                25%{background-color: yellow; left: 200px; top: 0px;}
+                50%{background-color: blue; left: 0px; top: 200px;}
+                100%{background-color: pink; left: 0px; top:0px;}
+            }
+                /* 25%{background-color: yellow;} */
+        </style>
+    </head>
+    <body>
+        <h1>Transparent Boxes</h1>
+        <div class="tobebordered1">
+            <div class="tobebordered">
+                <p id="margined">
+                    This is a bordered text with different border styles
+                </p>
+            </div>
+        </div>
+
+    </body>
+</html>
