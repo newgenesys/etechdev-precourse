@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>JS Example - Employee Registration</title>
+
+    <script src="emplyeeregistration.js"></script>
+    <link rel="stylesheet" href="emplyeeregistration.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>Welcome to ABC Employee Registration Portal</h1>
+    </header>
+    <div class="main">
+
+        <div class="notice">
+            Fields with * are required
+            <div class="messages" id="messages"></div>
+        </div>
+        <div class="formcontent">
+            <form action="#" method="POST" id="form" name="form" autocomplete="on">
+                <table style="border: 2px solid;">
+                    <tr>
+                        <td>
+                            <label for="firstname">First Name:<span class="compulsory"> *</span></label>
+                            <input type="text" id="firstname" name="firstname" class="compulsory"  autocomplete="off"/>
+                        </td>
+                        <td>
+                            <label for="middlename">Middle Name:</label>
+                            <input type="text" id="middlename" name="middlename" class="optional" />
+                        </td>
+                        <td>
+                            <label for="lastname">Last Name:<span class="compulsory"> *</span></label>
+                            <input type="text" id="lastname" name="lastname" class="compulsory" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gender">Gender:</label>
+                            <select name="gender" class="optional">
+                                <!--Radio Box Could be used-->
+                                <option>Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="dob">Date Of Birth:<span class="compulsory"> *</span></label>
+                            <input type="date" id="dob" name="dob" class="compulsory" />
+                        </td>
+                        <td>
+                            <label for="maritalstatus">Marital Status:<span class="compulsory"> *</span></label>
+                            <select name="maritalstatus" id="maritalstatus" class="compulsory">
+                                <!--Radio Box Could be used-->
+                                <option>Marital Status</option>
+                                <option>Single</option>
+                                <option>Married</option>
+                                <option>Divorced</option>
+                                <option>Prefer not to say</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--
+                    First Name(Compulsory), Middle Name(Optional), Last Name(Compulsory), 
+                    Gender(Optional), Date of Birth(Compulsory), Home Address (Compulsory), 
+                    Office Address(Optional), Marital Status(Compulsory), Number Children(Optional), Legal Sanctions(Compulsory), Country of origin(Compulsory), Country of residence(Compulsory),
+                    Base Salary(Compulsory), Remarks(Optional)
+                -->
+
+                        <td>
+                            <label for="children">Number of Children:</label>
+                            <input type="number" id="children" name="children" class="optional" />
+                        </td>
+                        <td>
+                            <label for="sanctions">Faced Any Legal Sanctions?:</label>
+                            <select name="sanctions" id="sanctions" class="optional">
+                                <!--Radio Box Could be used-->
+                                <option>Faced any legal sanction?</option>
+                                <option>No</option>
+                                <option>Yes</option>
+                                <option>Prefer not to say</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="salary">Base Salary:<span class="compulsory"> *</span></label>
+                            <input type="number" id="salary" name="salary" class="compulsory" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="country1">Country of Origin:<span class="compulsory"> *</span></label>
+                            <select name="country1" id="country1" class="compulsory">
+                                <!--Radio Box Could be used-->
+                                <option>Select country of origin</option>
+                                <option>Cameroon</option>
+                                <option>Nigeria</option>
+                                <option>USA</option>
+                                <option>UK</option>
+                                <option>Germany</option>
+                                <option>Czech Republic</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="nationality">Nationality:<span class="compulsory"> *</span></label>
+                            <select name="nationality" id="nationality" class="compulsory">
+                                <!--Radio Box Could be used-->
+                                <option>Select country of nationality</option>
+                                <option>Cameroonian</option>
+                                <option>Nigerian</option>
+                                <option>American</option>
+                                <option>British</option>
+                                <option>German</option>
+                                <option>Czech</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="residence">Country of residence:<span class="compulsory"> *</span></label>
+                            <select name="residence" id="residence" class="compulsory">
+                                <!--Radio Box Could be used-->
+                                <option>Select country of residence</option>
+                                <option>Cameroon</option>
+                                <option>Nigeria</option>
+                                <option>USA</option>
+                                <option>UK</option>
+                                <option>Germany</option>
+                                <option>Czech Republic</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="haddress">Home Address:<span class="compulsory"> *</span></label>
+                            <textarea rows="5" cols="50" id="haddress" name="haddress" class="compulsory"></textarea>
+                        </td>
+                        <td>
+                            <label for="oaddress">Office Address:</label>
+                            <textarea rows="5" cols="50" id="oaddress" name="oaddress" class="optional"></textarea>
+                        </td>
+                        <td>
+                            <label for="remarks">Remarks:</label>
+                            <textarea rows="5" cols="50" id="remarks" name="remarks" class="optional"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit" id="submitbtn" class="submitbtn" onclick="event.preventDefault(); validate();"/></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

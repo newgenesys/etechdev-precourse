@@ -1,0 +1,56 @@
+body{
+    background: url("mybg.jpeg");
+    color: white;  
+    font-family: sans-serif;  
+    margin: 50px 150px 50px 150px;
+}
+
+.header{
+    text-align: center;
+}
+
+.notice{
+    padding: 5px 20px 20px 0px;
+    color: red;
+    background-color: lightblue;
+    /* width: 100%; */
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+label .compulsory{
+    color: red;
+}
+
+input{
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    font-size: 18px;
+}
+
+input.compulsory:hover, textarea.compulsory:hover{
+    border: 2px solid red;
+}
+
+input.optional:hover, textarea.optional:hover{
+    border: 2px solid blue;
+}
+
+
+.main{
+    margin: 10px 10px 10px 10px;
+    width: 100%;
+}
+
+#form{
+    width: 100%;
+}
+
+
+#submitbtn{
+  border-radius: 10px;
+  height: 40px;  
+  margin-top: 10px;
+  text-align: center;  
+}
